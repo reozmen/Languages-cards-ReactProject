@@ -1,38 +1,51 @@
 .card {
-    height: 120px;
-    background-color: peachpuff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
+  height: 120px;
+  background-color: peachpuff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .card:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 9px 2px #2B24B2;
+  cursor: pointer;
+  box-shadow: 0px 0px 9px 2px #2b24b2;
 }
 
 .card-logo {
-    width: 65%;
-    height: 75px;
-    object-fit: scale-down;
-    transition: transform 0.3s ease-out;
+  width: 65%;
+  height: 75px;
+  object-fit: scale-down;
+  transition: transform 0.3s ease-out;
 }
 
 .card:hover .card-logo {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .card-title {
-    text-align: center;
-    font-size: 1rem;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .list {
-    text-align: left;
-    font-size: 0.9rem;
-    font-weight: 500;
-    list-style-position: outside;
-    padding-left: 15px;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  list-style: none;
+}
+
+.list li:before {
+  content: "☢️";
+  margin: 0 0.2rem;
+}
+
+.list p {
+  display: inline-block;
+  color: rgb(255, 176, 46);
+  background-color: black;
+  border-radius: 5px;
+  padding: 0.1rem 1rem;
 }
